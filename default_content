@@ -1,0 +1,7 @@
+// functions.php
+add_filter('default_content', 'my_editor_content');
+
+function my_editor_content( $content ) {
+  $content = "If you enjoyed this post, make sure to subscribe to my rss feed.";
+  return $content;
+}
